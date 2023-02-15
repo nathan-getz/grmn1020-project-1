@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nathan Getz: GRMN 1020 - Projekt 1</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class="container my-5">
+    <h1 class="display-1 mb-1">Konsum & Nachhaltigkeit</h1>
+    <span class="display-6 text-muted">Online Ratgeber von Nathan Getz</span>
+    <hr>
+    <div class="count_container">
+        <div class="container my-5">
+            <!--
+                You are going to create a blog offering guidance and suggestions to your readers on how to reduce waste and promote more sustainable consumerism.
+                First, explain the concept of your blog in complete sentences. Be specific and use a variety of vocabulary from chapter 5.
+                These questions may guide your concept description:
+                - Warum ist Ihnen Nachhaltigkeit wichtig?
+                - Wie viel/wenig Plastik benutzen Sie (im Bad, in der Küche, in der Uni, etc.)?
+                - Welche Null-Müll Regeln gefallen Ihnen/empfehlen Sie?
+            -->
+            <h1 class="display-4">Konzept</h1>
+            <hr>
+            <div class="container">
+                Ich glaube dass Nachhaltigkeit wichtig ist weil ohne es schaden wir unserer Umwelt.
+            </div>
+        </div>
+        <div class="container my-5">
+            <!--
+                Next you are presenting 5 concrete examples on how to reduce waste.
+                You may provide comparisons as in activity 191. Please include visuals.
+                - Welches Produkt und welche Alternative gibt es? 
+                - Wofür benutzen Sie das Produkt und wie oft? 
+                - Wo kann man das Produkt kaufen? 
+                - Woher kommt das Produkt?/ Wer produziert es? Woher kommt das Alternativprodukt? Welche Transportwege gibt es?
+                - Gefällt Ihnen das Produkt? Empfehlen Sie das Produkt den Leser*innen?
+            -->
+            <h1 class="display-4">Wie kann man Müll reduzieren?</h1>
+            <hr>
+            <div class="container">
+                <ol>
+                    <li>
+                        <div>Man kann nur wiederverwendbare Produkte benutzen.</div>
+                        <div class="container">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div>Man kann den Müll trennen.</div>
+                    </li>
+                    <li>
+                        <div>Man kann </div>
+                    </li>
+                    <li>
+                        <div></div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="container my-5">
+            <!--
+                The last part of your blog will feature one no-cost/homemade gift.
+                Describe the material/idea of the gift and how to make it.
+                - Für welchen Anlass ist das Geschenk?
+                - Wem kann man das Geschenk geben?/Wem geben Sie das Geschenk?
+                - Wie macht man das Geschenk?
+            -->
+            <h1 class="display-4">Geschenke selbstgemacht</h1>
+            <hr>
+            <div class="container">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        String.prototype.countWords = function() {
+            return this.split(/[\s]+/).length;
+        }
+
+        var word_count = 0;
+        var elements = document.getElementsByClassName("count_container");
+        var content = "";
+        for (let i = 0; i < elements.length; i++) {
+            content += elements.item(i).innerText.trim();
+        }
+        content = content.replace(/[^\w']+/, ' ');
+
+        word_count = content.countWords();
+        console.log(content);
+
+        var container = document.createElement("div");
+        container.id = "count_display";
+        container.className = "container text-center";
+        container.innerText += word_count + " word" + (word_count == 1 ? "": "s");
+        document.body.appendChild(container);
+    </script>
+  </body>
+</html>
